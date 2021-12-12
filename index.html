@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="./js/Rotation.js"></script>
+    <script src="./Js/Game.js"></script>
+  
+  </head>
+  <body>
+
+    <a-scene background="color:lightblue">
+    <a-entity id="look" look-controls camera position="0 4 20"></a-entity>
+
+    <a-assets timeout="10000">
+    <a-asset-item id="terrainMap" src="./assets/road/scene.gltf"></a-asset-item>
+    <a-asset-item id="car" src="./assets/cyberpunk_car/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <!--Race Track-->
+    <a-entity id="terrain" gltf-model="#terrainMap" position="-70 -300 -13000" scale="7 7 7" terrain-rotation-reader   flying-birds  animation="property: position; to: 0 0 1000;easing:linear; loop: true; dur: 30000"></a-entity>
+    
+    <!--VR TEXT STARTING-->
+    <a-entity id="header" position="1 -4 0">
+    <a-entity position="-24.5 22.5 0" text="font: exo2bold; align: center; width: 40; color: black; value: VIRTUAL CAR SIMULATION"></a-entity>
+    
+    <a-entity position="-23.5 20.3 0">
+    <a-entity position="-1.5 0.07 0" text="font: aileronsemibold; width: 12; color: black; value: TIME\nREMAINING"></a-entity>
+    <a-entity id="timer" position="-9.8 0.3 0" text="font: exo2bold; align: center; width: 30; color: black; value: 00:00"></a-entity></a-entity></a-entity>
+
+    <a-entity position ="30.5 18.5 0">
+    <a-entity position = "" text="font:exo2bold ; color:black ; width:40 ; align:center ; value:SCORE"></a-entity>
+    <a-entity id="score" position="0 -2 0" text="font:exo2bold ; align:center ; width: 40 ; color : black ; value : 0"></a-entity></a-entity>
+
+    <!--VR TEXT END-->
+
+    <!--Models-->
+    <a-entity id="car" gltf-model="#car" position="0 0 10" scale="2 2 2" rotation="0 180 0" dynamic-body ="mass:0" game-play car-rotation-reader></a-entity>
+    
+
+</a-scene>
+</body>
+</html>

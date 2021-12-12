@@ -1,0 +1,11 @@
+Model Information:
+* title:	3D Traffical Cone (Dirty)
+* source:	https://sketchfab.com/3d-models/3d-traffical-cone-dirty-c2310837dca94c008d3cb31d0c8885bb
+* author:	Grand Dog Studio (https://sketchfab.com/GrandDogStudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3D Traffical Cone (Dirty)" (https://sketchfab.com/3d-models/3d-traffical-cone-dirty-c2310837dca94c008d3cb31d0c8885bb) by Grand Dog Studio (https://sketchfab.com/GrandDogStudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
